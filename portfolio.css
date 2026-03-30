@@ -1,0 +1,256 @@
+/* ================= GLOBAL ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: system-ui, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:url("https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+#logoheading{
+font-size:32px;
+animation:textcolorchange 3s infinite;
+}
+
+ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.navlinks{
+color:white;
+padding:8px 15px;
+border-radius:8px;
+background:rgba(0,0,0,0.3);
+}
+
+.navlinks:hover{
+background:linear-gradient(to right, beige,#FFD93D);
+color:black;
+transition:.4s;
+}
+
+@keyframes textcolorchange {
+0%{color:#6B6BFF;}
+25%{color:#6BFF6B;}
+50%{color:#FF6B6B;}
+75%{color:#FFD93D;}
+100%{color:#6B6BFF;}
+}
+
+/* ================= ABOUT ================= */
+
+.section2{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:40px;
+padding:80px 5%;
+}
+
+#portfolioimg{
+width:250px;
+height:250px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.gradient-border{
+padding:6px;
+background:linear-gradient(to right,beige,yellow);
+border-radius:50%;
+}
+
+.gradient-text{
+background-image:linear-gradient(to right,beige,#FFD93D);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+#mainparadiv{
+max-width:600px;
+font-size:20px;
+}
+
+/* ================= PROJECTS ================= */
+
+#section3{
+padding:80px 5%;
+}
+
+#myprojectH{
+font-size:38px;
+text-align:center;
+margin-bottom:50px;
+}
+
+#prjcont,
+#prjcont2,
+#prjcont3{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-bottom:30px;
+}
+
+.prjs{
+background:#c9b6b6;
+color:black;
+border-radius:10px;
+padding:10px;
+text-align:center;
+transition:.3s;
+}
+
+.prjs:hover{
+transform:scale(1.03);
+}
+
+.prjvids{
+width:100%;
+border-radius:8px;
+}
+
+.prjh2{
+margin-top:10px;
+}
+
+/* ================= SKILLS ================= */
+
+#section4{
+padding:80px 5%;
+text-align:center;
+}
+
+#skillsH{
+font-size:38px;
+margin-bottom:50px;
+}
+
+#skillsmaindiv{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:40px;
+align-items:center;
+}
+
+#skillsmaindiv img{
+width:80px;
+height:80px;
+object-fit:contain;
+margin-bottom:10px;
+}
+
+/* ================= CONTACT ================= */
+
+#section5{
+padding:80px 5%;
+}
+
+.form-container{
+max-width:600px;
+margin:auto;
+padding:30px;
+background:rgba(255,255,255,0.05);
+border-radius:10px;
+}
+
+.form-group{
+margin-bottom:15px;
+}
+
+.form-group label{
+display:block;
+margin-bottom:5px;
+}
+
+.form-group input,
+.form-group textarea{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:none;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#5A67D8;
+border:none;
+color:white;
+font-weight:bold;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#434DAA;
+}
+
+/* ================= FOOTER ================= */
+
+#footerSec{
+background:#222;
+padding:20px;
+text-align:center;
+}
+
+#copyrightp{
+margin-bottom:10px;
+}
+
+.social-icon{
+width:30px;
+height:30px;
+margin:0 10px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.section2{
+text-align:center;
+}
+
+#mainparadiv{
+font-size:18px;
+}
+
+}
