@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
+
+
+<script src="portfolio.js"></script>
+
 <body>
+    <div class="scroll-progress"></div>
+
+    <div class="cursor-glow"></div>
+
     <div class="maincont">
         <!-- ----------------------------This is the nav section of the website--------------------= -->
         <!-- <img src="backimg1.jpg" alt="img not found"> -->
@@ -25,16 +33,29 @@
         </nav>
 
         <!-- -------------------------------This is the About section of the website---------------- -->
-        <section class="section2">
+        <section id="section2" class="reveal-section">
             <!-- <img src="imgtitle.png" id="imgtitle" alt="img title not found"> -->
             <img class="gradient-border" id="portfolioimg" src="Piyush.jpeg"  alt="img not found">
             <div id="aboutcontent">
-                <div id="mainparadiv">
-                    <p class="gradient-text">"Hello! I’m a web development student and coding enthusiast, just starting
-                        my tech journey. I’m exploring various programming languages and am passionate about learning
-                        and building skills to create impactful digital experiences."
-                    </p>
-                </div>
+
+    <h1 id="heroTitle">
+        Hi, I'm <span class="gradient-text">Piyush</span>
+    </h1>
+
+    <h2 id="heroSubtitle">
+        Web Developer & Coding Enthusiast
+    </h2>
+
+    <div id="mainparadiv">
+        <p id="heroDescription" class="gradient-text">
+            Hello! I'm a web development student and coding enthusiast,
+            just starting my tech journey. I'm exploring various
+            programming languages and am passionate about learning
+            and building skills to create impactful digital experiences.
+        </p>
+    </div>
+
+</div>
             </div>
         </section>
         <!-- ---------------------------------------------------------------------------------------- -->
@@ -42,7 +63,7 @@
 
 
         <!-- -----------------------------This is the Projects Section of the website------------------>
-        <section class="section3" id="section3">
+        <section class="reveal-section" id="section3">
             <h1 id="myprojectH" class="gradient-text" style="color: white; text-align: center;">My Projects</h1>
             <div id="prjcont">
                 <div class="prjs" id="prj1">
@@ -104,7 +125,7 @@
         </section>
         <!-- ----------------------------------------------------------------------------------------------------------- -->
         <!-- -------------------------------------Section 3: Skills----------------------------------------------------- -->
-        <section id="section4">
+        <section id="section4" class="reveal-section">
             <div>
                 <h1 id="skillsH">Skills</h1>
                 <div id="skillsmaindiv">
@@ -157,7 +178,7 @@
 
         <!-- ---------------------------------------Section 4: Contact----------------------------------------------- -->
 
-        <section id="section5">
+        <section id="section5" class="reveal-section">
             <h1 id="mycontactH" class="gradient-text" style="color: white; text-align: center;">Contact Me!</h1>
             <!-- <div class="contact_box">
                 <form action="">
@@ -253,8 +274,16 @@
 
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
 
 </body>
 

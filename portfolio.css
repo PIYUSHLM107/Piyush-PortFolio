@@ -19,6 +19,27 @@ background-attachment:fixed;
 color:white;
 }
 
+/* ================= SCROLL PROGRESS ================= */
+
+.scroll-progress {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 5px;
+
+    background: linear-gradient(
+        to right,
+        #6B6BFF,
+        #FFD93D
+    );
+
+    z-index: 9999;
+
+    transform-origin: left;
+}
 /* ================= NAVBAR ================= */
 
 nav{
@@ -65,7 +86,7 @@ transition:.4s;
 
 /* ================= ABOUT ================= */
 
-.section2{
+#section2{
 display:flex;
 flex-wrap:wrap;
 align-items:center;
@@ -98,6 +119,21 @@ max-width:600px;
 font-size:20px;
 }
 
+#aboutcontent {
+    max-width: 650px;
+}
+
+#heroTitle {
+    font-size: clamp(40px, 2vw, 60px);
+    margin-bottom: 10px;
+}
+
+#heroSubtitle {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
 /* ================= PROJECTS ================= */
 
 #section3{
@@ -119,27 +155,69 @@ gap:30px;
 margin-bottom:30px;
 }
 
-.prjs{
-background:#c9b6b6;
-color:black;
-border-radius:10px;
-padding:10px;
-text-align:center;
-transition:.3s;
+
+/* .prjs {
+    background: rgba(201, 182, 182, 0.9);
+    color: black;
+
+    border-radius: 15px;
+    padding: 10px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    transform-style: preserve-3d;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    transition: box-shadow 0.3s ease;
+} */
+
+.prjs {
+    background: rgba(201, 182, 182, 0.9);
+    color: black;
+
+    border-radius: 15px;
+    padding: 10px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    transform-style: preserve-3d;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3);
+
+    will-change: transform;
 }
 
-.prjs:hover{
-transform:scale(1.03);
+.prjs:hover {
+    box-shadow: 0 20px 50px rgba(255, 217, 61, 0.25);
 }
 
-.prjvids{
-width:100%;
-border-radius:8px;
+.prjvids {
+    width: 100%;
+    display: block;
+
+    border-radius: 10px;
+
+    transition: transform 0.4s ease;
 }
 
-.prjh2{
-margin-top:10px;
+.prjs:hover .prjvids {
+    transform: scale(1.05);
 }
+
+.prjh2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    transform: translateZ(30px);
+}
+
+
 
 /* ================= SKILLS ================= */
 
@@ -209,8 +287,9 @@ border-radius:6px;
 cursor:pointer;
 }
 
-button:hover{
-background:#434DAA;
+button:hover {
+    background: #FFD93D;
+    color: black;
 }
 
 /* ================= FOOTER ================= */
