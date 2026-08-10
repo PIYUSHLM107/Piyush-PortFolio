@@ -93,27 +93,6 @@ gsap.from("#myprojectH", {
 
 
 // ======================================
-// PROJECT CARDS
-// ======================================
-
-// gsap.from(".prjs", {
-//     scrollTrigger: {
-//         trigger: "#section3",
-//         start: "top 75%"
-//     },
-
-//     y: 100,
-//     opacity: 0,
-//     scale: 0.8,
-
-//     duration: 0.8,
-
-//     stagger: 0.2,
-
-//     ease: "back.out(1.5)"
-// });
-
-// ======================================
 // 3D PROJECT CARD HOVER
 // ======================================
 
@@ -251,19 +230,13 @@ gsap.from("#footerSec", {
 // ======================================
 
 gsap.to(".scroll-progress", {
-
     width: "100%",
-
     ease: "none",
 
     scrollTrigger: {
-        trigger: document.body,
-
         start: "top top",
-        end: "bottom bottom",
-
+        end: "max",
         scrub: 0.2
     }
-
 });
 

@@ -86,45 +86,54 @@ transition:.4s;
 
 /* ================= ABOUT ================= */
 
-#section2{
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-justify-content:center;
-gap:40px;
-padding:80px 5%;
+.section2 {
+    min-height: 90vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 80px 5%;
 }
 
-#portfolioimg{
-width:250px;
-height:250px;
-border-radius:50%;
-object-fit:cover;
+#portfolioimg {
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    will-change: transform;
 }
 
-.gradient-border{
-padding:6px;
-background:linear-gradient(to right,beige,yellow);
-border-radius:50%;
+.gradient-border {
+    padding: 6px;
+    background: linear-gradient(to right, beige, yellow);
+    border-radius: 50%;
 }
 
-.gradient-text{
-background-image:linear-gradient(to right,beige,#FFD93D);
--webkit-background-clip:text;
-color:transparent;
-}
-
-#mainparadiv{
-max-width:600px;
-font-size:20px;
+.gradient-text {
+    background-image: linear-gradient(to right, beige, #FFD93D);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 #aboutcontent {
     max-width: 650px;
 }
 
+#mainparadiv {
+    max-width: 600px;
+    font-size: 20px;
+}
+
 #heroTitle {
-    font-size: clamp(40px, 2vw, 60px);
+    font-size: clamp(40px, 5vw, 60px);
     margin-bottom: 10px;
 }
 
@@ -133,7 +142,6 @@ font-size:20px;
     margin-bottom: 25px;
     color: #ddd;
 }
-
 /* ================= PROJECTS ================= */
 
 #section3{
